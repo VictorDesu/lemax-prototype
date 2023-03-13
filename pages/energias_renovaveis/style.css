@@ -219,14 +219,19 @@ body {
 
 
 /*Responsividade*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .hero-content {
         justify-content: center;
+        max-width: 90%;
     }
     
     .hero-content h3 {
         padding-top: 0;
         font-weight: normal;
+    }
+
+    #p_reduzir {
+        max-width: 70%;
     }
 
     .divider {
@@ -235,26 +240,26 @@ body {
 
     .dados-content {
         flex-direction: column;
+        padding: 0;
     }
 
     .content_pt1 {
         width: 100%;
+        font-size: 80%;
     }
     .content_pt1 h1 {
         padding-top: 3rem;
     }
 
     .content_pt2 {
-        flex-direction: row;
-        width: 100%;
+        flex-direction: column;
+        width: 100vw;
+        font-size: 70%;
     }
     .content_pt2 #content_pt2_1, #content_pt2_2, #content_pt2_3 {
         height: 100%;
     }
-    .content_pt2 #content_pt2_2 {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+    
     .content_pt2 #content_pt2_2 #pt2_2_line1 {
         display: none;
     }
@@ -266,7 +271,6 @@ body {
     .footer-content {
 		text-align: center;
 	}
-
 	.footer-content img {
 		width: 20%;
 	}
