@@ -16,12 +16,6 @@ body {
 	width: 10%;
 }
 
-main {
-	width: auto;
-	height: 100vh;
-	color: #fff;
-}
-
 .hero {
 	background-image: url('../../images/teste2_bg.png');
 	background-position: center;
