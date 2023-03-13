@@ -19,9 +19,6 @@ header {
 
 nav ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	padding-right: 5%;
 	text-align: right;
 }
 
@@ -34,7 +31,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-	margin-right: 0;
+	margin-right: 5%;
 }
 
 #lemax_logo {
@@ -43,28 +40,23 @@ nav ul li:last-child {
 	width: 10%;
 }
 
-main {
-	width: auto;
-	height: 100vh;
-	color: #fff;
-}
-
 .hero {
 	background-image: url('./images/bg_main.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: inherit;
+	height: 100vh;
+	width: inherit;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-left: 5%;
 }
 
 .hero-content {
 	text-align: center;
 	color: #fff;
 	max-width: 40%;
+	padding-left: 5%;
 }
 
 .hero-content h1 {
@@ -101,7 +93,6 @@ main {
 	padding-bottom: 7rem;
 	padding-top: 5rem;
 	text-align: center;
-
 	opacity: 0;
 }
 
@@ -407,9 +398,12 @@ h2 {
 }
 
 /*Responsividade*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	nav ul {
 		text-align: center;
+	}
+	nav ul li:last-child {
+		margin-right: 0;
 	}
 
 	#lemax_logo {
@@ -423,6 +417,7 @@ h2 {
 
 	.hero-content {
 		max-width: 90%;
+		padding-left: 0;
 	}
 
 	.circle {
