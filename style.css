@@ -1,0 +1,479 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*sobre nós*/
+header {
+	background-color: transparent;
+	color: #fff;
+	padding-top: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 5%;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 120%;
+	cursor: pointer;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+#lemax_logo {
+	position: absolute;
+	padding-left: 5%;
+	width: 10%;
+}
+
+main {
+	width: auto;
+	height: 100vh;
+	color: #fff;
+}
+
+.hero {
+	background-image: url('./images/bg_main.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: inherit;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 5%;
+}
+
+.hero-content {
+	text-align: center;
+	color: #fff;
+	max-width: 40%;
+}
+
+.hero-content h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+
+.hero-content p {
+	font-size: 100%;
+	margin-bottom: 2rem;
+}
+
+.hero-content #btn_hero_contato {
+	padding: 15px 20px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 110%;
+	animation: fadein 1s 0.3s ease;
+}
+
+.hero-content #btn_hero_contato:hover {
+	cursor: pointer;
+}
+
+
+/*Cards*/
+.card-section {
+	padding-bottom: 7rem;
+	padding-top: 5rem;
+	text-align: center;
+
+	opacity: 0;
+}
+
+.card-section h2 {
+	margin-top: 0;
+	margin-bottom: 50px;
+	font-size: 2rem;
+	color: var(--cinza);
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0 2px 4px var(--cinza-claro);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	flex: 1;
+	max-width: 350px;
+	border-top: 10px solid var(--azul-claro);
+}
+
+.card-icon {
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 20px;
+}
+
+.card-icon img {
+	width: 60px;
+	height: 60px;
+}
+
+.card-content h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	color: var(--cinza);
+}
+
+.card-content p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2rem;
+	color: var(--cinza-claro);
+}
+
+/*Circular*/
+.circle-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 7rem;
+	gap: 1rem;
+
+	opacity: 0;
+}
+
+.circle-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.circle {
+	background-image: url(./images/solarEnergy_circular.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px var(--cinza-claro);
+}
+
+.text-container {
+	width: 50%;
+	height: auto;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: var(--azul-mais-claro);
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 1px var(--border-color-circular);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text-container h2 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+	color: var(--cinza);
+}
+
+.text-container a {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: left;
+	color: var(--cinza-escuro);
+}
+
+.servicos-btns #PLA-btn {
+	padding: 15px 20px;
+	background-color: transparent;
+	border: 2px solid var(--azul);
+	border-radius: 50px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 110%;
+	color: var(--azul);
+	cursor: pointer;
+}
+
+.servicos-btns #ER-btn {
+	padding: 15px 20px;
+	background-color: transparent;
+	border: 2px solid var(--verde);
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 110%;
+	color: var(--verde);
+	cursor: pointer;
+}
+
+.servicos-btns #PLA-btn:hover {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+.servicos-btns #ER-btn:hover {
+	background-color: var(--verde);
+	color: #fff;
+}
+
+
+/*Parceiros*/
+.parceiros {
+	opacity: 0;
+}
+
+.parceiros-container {
+	width: 100%;
+	background-color: var(--cinza-mais-claro);
+	text-align: center;
+	margin-bottom: 9rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0;
+	padding-top: 3.5rem;
+	color: var(--cinza);
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 1.5rem;
+	color: var(--cinza-claro);
+}
+
+.image-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-width: 100%;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.image-row img {
+	margin: 10px;
+	width: 15%;
+	height: 15%;
+}
+
+/*Contato*/
+.contato {
+	padding: 50px 0;
+}
+
+.contato-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 50px 0;
+	width: 100%;
+	height: auto;
+	background-color: var(--cinza-mais-claro);
+	gap: 1rem;
+}
+
+.contato img {
+	width: 400px;
+	height: auto;
+}
+
+.text-container-contato {
+	width: 50%;
+	height: auto;
+	padding: 0 50px;
+	background-color: var(--azul-mais-claro);
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 1px var(--border-color-circular);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text-container-contato h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: var(--cinza);
+}
+
+.text-container-contato p {
+	font-size: 1.2rem;
+	color: var(--cinza);
+}
+
+.text-container-contato p a {
+	font-size: 1.2rem;
+	color: var(--cinza);
+	text-decoration: underline;
+}
+
+.text-container-contato p a:hover {
+	font-size: 1.2rem;
+	color: var(--cinza-escuro);
+	text-decoration: underline;
+}
+
+
+/*Footer*/
+.footer-content {
+	width: 100%;
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: var(--cinza-escuro);
+	color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-content img {
+	width: 10%;
+}
+
+
+/*Cores*/
+:root {
+	--cinza-escuro: #313132;
+	--cinza: #54595F;
+	--cinza-claro: #908D8D;
+	--cinza-mais-claro: #f9f9f9;
+	--azul: #163A82;
+	--azul-claro: #65B5FF;
+	--azul-mais-claro: #EAF0FF;
+	--border-color-circular: #6b79c2;
+	--verde: #45A14B;
+}
+
+/*Animações*/
+@keyframes fadein {
+	0% {
+		opacity: 0%;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+/*Responsividade*/
+@media screen and (max-width: 600px) {
+	nav ul {
+		text-align: center;
+	}
+
+	#lemax_logo {
+		display: none;
+	}
+
+	.hero {
+		justify-content: center;
+		background-position: left;
+	}
+
+	.hero-content {
+		max-width: 90%;
+	}
+
+	.circle {
+		display: none;
+	}
+
+	.text-container {
+		padding: 5rem;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.text-container h2 {
+		font-size: 2rem;
+	}
+
+	.text-container #PLA-btn {
+		margin-bottom: 1rem;
+	}
+
+	.parceiros-container h1 {
+		font-size: 1.5rem;
+	}
+
+	.parceiros-container h2 {
+		font-size: 1rem;
+	}
+
+	.parceiros-container {
+		flex-direction: column;
+	}
+
+	.text-container-contato {
+		height: auto;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.text-container-contato h2 {
+		font-size: 1.5rem;
+	}
+
+	.contato img {
+		display: none;
+	}
+
+	.footer-content {
+		text-align: center;
+	}
+
+	.footer-content img {
+		width: 20%;
+	}
+}

@@ -1,0 +1,307 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*Hero*/
+.hero {
+    height: 100vh;
+
+    background-image: url("../../images/bg_energias.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    color: #fff;
+}
+
+.hero-content h1 {
+    padding-top: 20%;
+}
+
+.hero-content h3 {
+    padding-top: 5%;
+    font-weight: normal;
+}
+
+.hero-content .btn_hero_simulacao, .hero_vantagens .btn_hero_simulacao2 {
+    margin-top: 30%;
+
+    padding: 15px 20px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 110%;
+}
+
+.hero-content .btn_hero_simulacao:hover, .hero_vantagens .btn_hero_simulacao2:hover {
+    cursor: pointer;
+}
+
+
+/*Vantagens*/
+.hero_vantagens {
+    height: 100vh;
+
+    background-image: url("../../images/bg_vantagens.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vantagens-content {
+    height: 100vh;
+    padding-left: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+    color: #fff;
+
+    opacity: 0;
+}
+
+.vantagens-content h1 {
+    padding-bottom: 6%;
+}
+
+.hero_vantagens a {
+    margin-top: 5%;
+}
+
+.icon-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 110%;
+}
+  
+.icon-paragraph span {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+/*Dados*/
+.hero_dados {
+    height: 100vh;
+
+    background-image: url("../../images/bg_energias_pq.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dados-content {
+    height: 100vh;
+    padding-left: 5%;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+
+    color: #fff;
+
+    opacity: 0;
+}
+
+.content_pt1, .content_pt2 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content_pt1 img {
+    width: 60%;
+    padding-bottom: 5rem;
+}
+
+.divider {
+    width: 0.1%;
+    height: 50%;
+    background-color: #206CDE;
+    border: 1px solid #043277;
+}
+
+/*Footer*/
+.footer-content {
+	width: 100%;
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: #313132;
+	color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-content img {
+	width: 10%;
+}
+
+/*Arrow down*/
+.down-arrow-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+  
+.down-arrow {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    animation: pulse 1s infinite;
+}
+
+
+/*Responsividade*/
+@media screen and (max-width: 600px) {
+    .hero-content {
+        justify-content: center;
+    }
+    
+    .hero-content h3 {
+        padding-top: 0;
+        font-weight: normal;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .dados-content {
+        flex-direction: column;
+    }
+
+    .content_pt1 {
+        width: 100%;
+    }
+    .content_pt1 h1 {
+        padding-top: 3rem;
+    }
+
+    .content_pt2 {
+        flex-direction: row;
+        width: 100%;
+    }
+    .content_pt2 #content_pt2_1, #content_pt2_2, #content_pt2_3 {
+        height: 100%;
+    }
+    .content_pt2 #content_pt2_2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .content_pt2 #content_pt2_2 #pt2_2_line1 {
+        display: none;
+    }
+
+    .hero-content .btn_hero_simulacao {
+        margin-top: 5%;
+    }
+
+    .footer-content {
+		text-align: center;
+	}
+
+	.footer-content img {
+		width: 20%;
+	}
+}
+
+/*Animações*/
+@keyframes fadein {
+	0% {
+		opacity: 0%;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes fadein_side {
+    0% {
+        opacity: 0%;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+}

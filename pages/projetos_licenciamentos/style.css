@@ -1,0 +1,242 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*Hero*/
+#lemax_logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 10%;
+}
+
+main {
+	width: auto;
+	height: 100vh;
+	color: #fff;
+}
+
+.hero {
+	background-image: url('../../images/teste2_bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 10%;
+	align-items: center;
+}
+
+.hero-content {
+	text-align: center;
+	color: #fff;
+}
+
+.hero-content h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	line-height: 11vh;
+	color: var(--cinza-escuro);
+	animation: fadein 1s ease;
+}
+
+.hero-content h3 {
+	color: var(--cinza-escuro);
+	animation: fadein 1s ease;
+}
+
+.hero-content ul {
+	font-size: 100%;
+	margin-bottom: 2rem;
+	text-align: left;
+	color: var(--cinza);
+	animation: fadein 1s ease;
+}
+
+.hero-content #btn_hero_saibaMais {
+	padding: 15px 20px;
+	background-color: transparent;
+	border: 2px solid var(--cinza-escuro);
+	border-radius: 10px;
+	color: var(--cinza-escuro);
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 110%;
+	margin-top: 50px;
+	animation: float 2s ease-in-out infinite;
+}
+
+.hero-content #btn_hero_saibaMais:hover {
+	cursor: pointer;
+}
+
+
+/*Cards*/
+.card-section {
+	padding-bottom: 9rem;
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.card-section h2 {
+	margin-top: 0;
+	margin-bottom: 50px;
+	font-size: 2rem;
+	color: var(--cinza);
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	background-color: #d9d9d9;
+	box-shadow: 0 2px 4px var(--cinza-claro);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	flex: 1;
+	max-width: 25%;
+	flex-basis: calc(33.33% - 20px);
+	height: 300px;
+}
+
+.card:hover {
+	cursor: pointer;
+	background-color: #908D8D;
+}
+
+.card-content h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	color: var(--cinza);
+}
+
+.card-content p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2rem;
+	color: var(--cinza-claro);
+}
+
+/*Footer*/
+.footer-content {
+	width: 100%;
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: var(--cinza-escuro);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-content img {
+	width: 10%;
+}
+
+/*Cores*/
+:root {
+	--cinza-escuro: #313132;
+	--cinza: #54595F;
+	--cinza-claro: #908D8D;
+	--cinza-mais-claro: #f9f9f9;
+	--azul: #163A82;
+	--azul-claro: #65B5FF;
+	--azul-mais-claro: #EAF0FF;
+	--border-color-circular: #6b79c2;
+	--verde: #45A14B;
+}
+
+/*Animações*/
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0%;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+/*Responsividade*/
+@media screen and (max-width: 600px) {
+
+	#lemax_logo {
+		width: 20%;
+	}
+
+	.hero {
+		justify-content: center;
+		background-position: left;
+		padding-left: 0;
+	}
+
+	.hero-content {
+		max-width: 90%;
+	}
+
+	.card {
+		background-color: #d9d9d9;
+		box-shadow: 0 2px 4px var(--cinza-claro);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 5px;
+		flex: 1;
+		max-width: 100%;
+		flex-basis: calc(66.66% - 20px);
+	}
+
+	.card-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-section h2 {
+		max-width: 90%;
+	}
+
+	.footer-content {
+		text-align: center;
+	}
+
+	.footer-content img {
+		width: 20%;
+	}
+}
